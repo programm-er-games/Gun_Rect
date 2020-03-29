@@ -7,50 +7,96 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords" content="оружие, склад, оружейный, оружия, Оружейный, Склад, Оружейный Склад">
+  <meta name="author" content="PerfeXturiumm">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-6 bg-danger">
-        Оружейный Склад
-      </div>
-      <div class="col-sm-6 col-md-3 bg-success">
-        Главная
-      </div>
-      <div class="dropdown open col-sm-6 col-md-3">
-        <button class="btn btn-secondary dropdown-toggle bg-info" type="button" id="triggerId" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Оружия
-        </button>
-        <div class="dropdown-menu bg-inverse" aria-labelledby="triggerId">
-          <button class="dropdown-item" href="#">AK-47(Автомат Калашиникова или "Калашников")</button>
-          <button class="dropdown-item" href="#">M4A4</button>
-          <button class="dropdown-item" href="#">Karambit(Керамбит)</button>
-          <button class="dropdown-item" href="#">Штык-нож M9</button>
-          <button class="dropdown-item" href="#">P90</button>
-          <button class="dropdown-item" href="#">MP5-SD</button>
-          <button class="dropdown-item" href="#">Desert Eagle(или же "Дигл")</button>
-          <button class="dropdown-item" href="#">Butterfly Knife(или же "Нож-бабочка")</button>
-          <button class="dropdown-item" href="#">Revolver R8(просто Револьвер)</button>
-          <button class="dropdown-item" href="#">USP-S</button>
-          <button class="dropdown-item" href="#">Glock-18(или же просто Глок)</button>
-        </div>
+  <header>
+    <div class="div1">Оружейный Склад</div>
+    <div class="div2">
+      <div class="glav">Главная</div>
+      <div class="kont">Контакты</div>
+      <div class="about">Обо мне</div>
+    </div>
+    <div class="dropdown open">
+      <button class="btn btn-secondary dropdown-toggle bg-info" id="btn" type="button" id="triggerId"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Оружия
+      </button>
+      <div class="dropdown-menu bg-inverse" id="5" aria-labelledby="triggerId">
+        <button class="dropdown-item" href="#Ak-47">AK-47(Автомат Калашиникова или "Калашников")</button>
+        <button class="dropdown-item" href="#">M4A4</button>
+        <button class="dropdown-item" href="#">Karambit(Керамбит)</button>
+        <button class="dropdown-item" href="#">Штык-нож M9</button>
+        <button class="dropdown-item" href="#">P90</button>
+        <button class="dropdown-item" href="#">MP5-SD</button>
+        <button class="dropdown-item" href="#">Desert Eagle(или же "Дигл")</button>
+        <button class="dropdown-item" href="#">Butterfly Knife(или же "Нож-бабочка")</button>
+        <button class="dropdown-item" href="#">Revolver R8(просто Револьвер)</button>
+        <button class="dropdown-item" href="#">USP-S</button>
+        <button class="dropdown-item" href="#">Glock-18(или же просто Глок)</button>
       </div>
     </div>
+  </header>
+  </div>
+  </div>
   </div>
   <div class="container">
     <div class="row">
       Здраствуйте, дорогие митингующие против школ!
-      Сегодня Вы увидите несколько видов оружий и их необычную историю, узнаете как выглядели их первоначальные версии,
-      а также, как они изображены в таких играх как: Battlefield, PUBG, CS:GO и легендарной Cs 1.6(но это не точно).
+      Сегодня Вы увидите несколько видов оружий и их необычную историю,
+      а также, как они изображены в таких играх, как: Battlefield, PUBG, CS:GO и легендарной Cs 1.6(но это не точно).
       Давайте начнём!
     </div>
     <div class="row">
-
+      <div class="col-sm-12 col-md-12" id="Ak-47">
+        <b>AK-47</b>
+        <br>
+        <img src="images/AK-47_assault_rifle.jpg" class="col-sm-12 col-md-5 pull-md-right" id="AK47"
+          onmousedown="change()">
+        <br>
+        Давайте начнём с легенды легенд - AK-47! Данный автомат был создан Михаилом Тимофеевичем Калашниковым в 1947
+        году, но был принят на вооружение только в 1949.
+        Есть боевое и гражданское семейство автомата Калашникова. Некоторые из них: AKM и AK-74 с их модификациями,
+        ручной пулемёт Калашникова(обычный калаш только с двуногой на конце дула и удобнее оригинала), карабины и
+        гладкоствольные ружья "Сайга", и т.д.
+        <br>
+        Итак, история автомата Калашникова(в дальнейшем AK-47).
+        <br>
+        Отправной точкой работ по созданию автомата для советских вооружённых сил стало прошедшее 15 июля 1943 года
+        совещание Технического совета при Наркомате обороны СССР, на котором по итогам изучения трофейного немецкого
+        автомата MKb.42(H) под первый в мире массовый промежуточный патрон 7,92 mm
+        калибра 7,92×33 мм, была отмечена большая важность нового направления в оружейной мысли и
+        поставлен вопрос о необходимости срочной разработки своего «уменьшенного» патрона, аналогичного немецкому, а
+        также оружия под него.
+        <br>
+        Первые образцы нового патрона были созданы ОКБ-44 уже через один месяц после совещания, а его
+        опытно-промышленное производство началось в марте 1944 года.
+        В ноябре 1943 года чертежи и спецификации на новый 7,62-мм промежуточный патрон конструкции Н. М. Елизарова и
+        Б.
+        В. Сёмина были разосланы по всем организациям, участвовавшим в разработке нового комплекса оружия. На этом
+        этапе
+        он имел калибр 7,62×41 мм, но впоследствии был переработан, т.е. калибр был изменён на 7,62×39 мм.
+        <br>
+        В Battlefield и CS:GO AK-47 ничем не отличается от оригинала, но в PUBG-е AK-47 заменён на АКМ (Avtomat
+        Kalashnikova Modernizirovanny, т.е. модернизированный автомат Калашникова) и вот как он выглядит:
+        <br>
+        <img src="images/AKM.png" class="col-md-3" onmouseover="change1()">
+        <br>
+        А в Cs 1.6 AK-47 называется CV-47. Также AK-47... ой извиняюсь CV-47 был изменён в целях не допустить бана на Cs
+        1.6 из-за авторского права.
+        <br>
+        В чём заключаются изменения?? А в том, что передёргивалка под названием затвор находится слева, а не справа, как
+        показано в <a href="#AK47">оригинале</a>.
+        <br>
+        <img src="images/34762185.png" class="img responsive">
+        <br>
+        Для справки: оригинальная версия AK-47 показана справа. Там чётко и ясно видно, что затвор находится справа, раз
+        оригинал был показан справа.
+      </div>
     </div>
   </div>
   <!-- Optional JavaScript -->
