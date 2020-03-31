@@ -11,39 +11,75 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.index.css">
-  </head>
+  <link rel="stylesheet" href="css/style.index.css">
+</head>
 
 <body>
+  <details>
+    <p><b>ОДБ</b> - Оружие(я) Дальнего Боя</p>
+    <p><b>ОББ</b> - Оружие(я) Ближнего Боя</p>
+    <p><b>ОО</b> - Огнестрельное Оружие</p>
+    <p><b>ХО</b> - Холодное Оружие</p>
+    <summary>Пояснения
+    </summary>
+  </details>
+  <summary>
+    <details>
+      <b>
+        <p>В картинках есть ссылки на определённые источники.</p>
+        <p>Т. е., если вам что-то стало непонятно по поводу того или иного оружия,</p>
+        <p>то Вы можете нажать на картинку и вас перекинет на источник,</p>
+        <p>с которого я брал или вдохновлялся информацией.</p>
+        <p>Теперь, ознакомившись внимательно с пояснениями, можете закрыть данное меню.</p>
+      </b>
+    </details>
+  </summary>
   <header>
     <div class="div1">Оружейный Склад</div>
     <div class="div2">
-      <div class="glav">Главная</div>
-      <div class="kont">Контакты</div>
-      <div class="about">Обо мне</div>
+      <div class="glav"><a class="div2_1" href="Glavnaya.html"></a>Главная</div>
+      <div class="kont"><a class="div2_1" href="Kontakti.html"></a>Контакты</div>
+      <div class="about"><a class="div2_1" href="About.html"></a>Обо мне</div>
     </div>
     <div class="dropdown open">
       <button class="btn btn-secondary dropdown-toggle bg-info" id="btn" type="button" id="triggerId"
         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Оружия
       </button>
-      <div class="dropdown-menu bg-inverse" id="5" aria-labelledby="triggerId">
-        <button class="dropdown-item" href="Ak-47">AK-47(Автомат Калашникова или Калаш)</button>
-        <button class="dropdown-item" href="#">M4A4</button>
-        <button class="dropdown-item" href="#">Karambit(Керамбит)</button>
-        <button class="dropdown-item" href="#">Штык-нож M9</button>
-        <button class="dropdown-item" href="#">P90</button>
-        <button class="dropdown-item" href="#">MP5-SD</button>
-        <button class="dropdown-item" href="#">Desert Eagle(или же "Дигл")</button>
-        <button class="dropdown-item" href="#">Butterfly Knife(или же "Нож-бабочка")</button>
-        <button class="dropdown-item" href="#">Revolver R8(просто Револьвер)</button>
-        <button class="dropdown-item" href="#">USP-S</button>
-        <button class="dropdown-item" href="#">Glock-18(или же просто Глок)</button>
+      <div class="dropdown-menu bg-inverse" aria-labelledby="triggerId">
+        <button class="dropdown-menu">
+          <div class="dropdown open">
+            <button class="btn btn-secondary dropdown-toggle bg-info" id="btn" type="button" id="triggerId"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              ОДБ(ОО)
+              <a class="dropdown-item" href="#"></a>
+              <a class="dropdown-item" href="#"></a>
+              <a class="dropdown-item" href="#"></a>
+              <a class="dropdown-item" href="#"></a>
+              <a class="dropdown-item" href="#"></a>
+            </button>
+            <div class="dropdown-menu bg-inverse" aria-labelledby="triggerId">
+              <button class="dropdown-menu"></button>
+            </div>
+            <button class="dropdown-menu">
+              <div class="dropdown open">
+                <button class="btn btn-secondary dropdown-toggle bg-info" id="btn" type="button" id="triggerId"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ОББ(ХО)
+                  <a class="dropdown-item" href="#"></a>
+                </button>
+                <div class="dropdown-menu bg-inverse" aria-labelledby="triggerId">
+                  <button class="dropdown-menu"><a class="dropdown-item" href="#">ghj</a></button>
+                  <button class="dropdown-menu"><a class="dropdown-item" href="#">sfht</a></button>
+                </div>
+              </div>
+            </button>
+          </div>
+        </button>
+
       </div>
     </div>
   </header>
-  </div>
-  </div>
   </div>
   <div class="container">
     <div class="row">
@@ -59,7 +95,8 @@
         <img src="images/AK-47_assault_rifle.jpg" class="col-sm-12 col-md-5 pull-md-right" id="AK47"
           onmousedown="change()">
         <br>
-        Давайте начнём с легенды легенд - AK-47! Данный автомат был создан Михаилом Тимофеевичем Калашниковым в 1947
+        Давайте начнём с легенды легенд - автомата Калашникова! Данный автомат был создан Михаилом Тимофеевичем
+        Калашниковым в 1947
         году, но был принят на вооружение только в 1949.
         Есть боевое и гражданское семейство автомата Калашникова. Некоторые из них: AKM и AK-74 с их модификациями,
         ручной пулемёт Калашникова(обычный калаш только с двуногой на конце дула и удобнее оригинала), карабины и
@@ -98,11 +135,88 @@
         Для справки: оригинальная версия AK-47 показана справа. Там чётко и ясно видно, что затвор находится справа, раз
         оригинал был показан справа.
       </div>
+      <div class="col-sm-12 col-md-12" id="m4a4">
+        <b>M4A4</b>
+        <br>
+        <img src="images/m4a4-csgo-3d-model-obj-mtl-c4d (1).jpg" class="img responsive col-md-5 col-sm-12"
+          onmousedown="change2()" alt="">
+        M4 — автоматический карабин, созданный в США на основе
+        винтовки М16А2
+        <br> и изначально предназначенный для вооружения экипажей боевых машин
+        и расчётов вооружения и военной техники.
+        <br>
+        Несмотря на это, Командование специальных операций США приняло этот карабин
+        в качестве единого для всех американских сил специальных операций. В настоящее
+        время его использует армия США, так как большее удобство укороченного
+        карабина в современных условиях, когда большую часть армии
+        составляют мотопехота, экипажи боевых машин и вспомогательные войска,
+        более чем компенсирует достаточно незначительное снижение его характеристик
+        в сравнении с винтовкой.
+        <br>
+        В каждом магазине данной винтовки находятся 30 патронов
+        калибра 5.56 и 90 патронов в запасе.
+        <br>
+        Эффективная дальность стрельбы составляет:
+        по одиночным целям — 500 м,
+        по групповым целям — 600 м.
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12">
+      <b>Karambit</b>
+      <br>
+      <img src="images/karambit.jpg" class="img responsive col-md-5 col-sm-12" onmousedown="change3()" alt="">
+      <br>
+      <i class="karam" onmousedown="change_txt()">Керамбит</i>
+      представляет собой небольшой индонезийской изогнутый нож , напоминающим коготь.
+      <br>
+      Керамбит считается, что первоначально были боеприпас среди минангкабау(народ такой есть)
+      в Западной Суматре(провинция Индонезии) , где, согласно фольклору, он был вдохновлен когтями тигра . Как и
+      большинство видов оружия в регионе, первоначально это было сельскохозяйственное орудие, предназначенное для того,
+      чтобы собирать корни, собирать молотилку и сажать рис в большей части островной Юго-Восточной Азии. Это меньший
+      вариант серпов Юго-Восточной Азии.
     </div>
   </div>
   <footer>
-    Всё законно. Perfexturiumm, 2020. Все права мои и они защищены
+    <br>
+    Всё законно. Perfexturiumm, 2020. Все права мои и они защищены.
+    <br>
+    <br>
   </footer>
+  <script>
+    function change() {
+      location.href = "";
+    }
+    function change1() {
+      location.href = "";
+    }
+    function change2() {
+      location.href = "";
+    }
+    function change3() {
+      location.href = "";
+    }
+    function change4() {
+      location.href = "";
+    }
+    function change5() {
+      location.href = "";
+    }
+    function change6() {
+      location.href = "";
+    }
+    function change7() {
+      location.href = "";
+    }
+    function change8() {
+      location.href = "";
+    }
+    function change9() {
+      location.href = "";
+    }
+    function change_txt() {
+      karam.textContent = 'Керамбит(как пишется в Филиппинах и в большинстве западных стран), kerambit(используются в обоих индонезийском и малайском), kurambik, Карамболь или karambiak(оба от языка Минангкабау)';
+    }
+  </script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
