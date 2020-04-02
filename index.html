@@ -12,9 +12,42 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.index.css">
+
+
+
 </head>
 
-<body>
+<body id="body1">
+  <div class="dropdown color-info">
+    <div class="dropdown open" id="drop1">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        ОДБ(ОО)
+      </button>
+      <div class="dropdown-menu" aria-labelledby="triggerId">
+        <button class="dropdown-item" href="#Ak-47">Action</button>
+        <button class="dropdown-item" href="#">Action</button>
+        <button class="dropdown-item" href="#">Action</button>
+        <button class="dropdown-item" href="#">Action</button>
+        <button class="dropdown-item" href="#">Action</button>
+        <button class="dropdown-item" href="#">Action</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="dropdown">
+    <div class="dropdown open" id="drop2">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        ОББ(ХО)
+      </button>
+      <div class="dropdown-menu" aria-labelledby="triggerId">
+        <button class="dropdown-item" href="#">Action</button>
+        <button class="dropdown-item" href="#">Action</button>
+      </div>
+    </div>
+  </div>
   <details>
     <p><b>ОДБ</b> - Оружие(я) Дальнего Боя</p>
     <p><b>ОББ</b> - Оружие(я) Ближнего Боя</p>
@@ -35,53 +68,44 @@
     </details>
   </summary>
   <header>
-    <div class="div1">Оружейный Склад</div>
-    <div class="div2">
-      <div class="glav"><a class="div2_1" href="Glavnaya.html"></a>Главная</div>
-      <div class="kont"><a class="div2_1" href="Kontakti.html"></a>Контакты</div>
-      <div class="about"><a class="div2_1" href="About.html"></a>Обо мне</div>
-    </div>
-    <div class="dropdown open">
-      <button class="btn btn-secondary dropdown-toggle bg-info" id="btn" type="button" id="triggerId"
-        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div class="stroke" id="st1">
+      <div class="div1">Оружейный Склад</div>
+      <div class="div2">
+        <div class="glav"><a class="div2_1" href="Glavnaya.html"></a>Главная</div>
+        <div class="kont"><a class="div2_1" href="Kontakti.html"></a>Контакты</div>
+        <div class="about"><a class="div2_1" href="About.html"></a>Обо мне</div>
+      </div>
+      <div class="div3">
         Оружия
-      </button>
-      <div class="dropdown-menu bg-inverse" aria-labelledby="triggerId">
-        <button class="dropdown-menu">
-          <div class="dropdown open">
-            <button class="btn btn-secondary dropdown-toggle bg-info" id="btn" type="button" id="triggerId"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              ОДБ(ОО)
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-              <a class="dropdown-item" href="#"></a>
-            </button>
-            <div class="dropdown-menu bg-inverse" aria-labelledby="triggerId">
-              <button class="dropdown-menu"></button>
-            </div>
-            <button class="dropdown-menu">
-              <div class="dropdown open">
-                <button class="btn btn-secondary dropdown-toggle bg-info" id="btn" type="button" id="triggerId"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  ОББ(ХО)
-                  <a class="dropdown-item" href="#"></a>
-                </button>
-                <div class="dropdown-menu bg-inverse" aria-labelledby="triggerId">
-                  <button class="dropdown-menu"><a class="dropdown-item" href="#">ghj</a></button>
-                  <button class="dropdown-menu"><a class="dropdown-item" href="#">sfht</a></button>
-                </div>
-              </div>
-            </button>
-          </div>
-        </button>
-
       </div>
     </div>
+    <br>
+    <div class="stroke" id="st2">
+      <div class="div7" id="butt4">
+        <button id="b4" title="Применено!" onmouseover="change_txt3_4()" onmouseout="change_txt4_4()">
+          Шрифт: 16(обычный)
+        </button>
+      </div>
+      <div class="div4" id="butt1">
+        <button id="b1" title="Применено!" onmouseover="change_txt3_1()" onmouseout="change_txt4_1()">
+          Шрифт: 20px
+        </button>
+      </div>
+      <div class="div5" id="butt2">
+        <button id="b2" title="Применено!" onmouseover="change_txt3_2()" onmouseout="change_txt4_2()">
+          Шрифт: 36px
+        </button>
+      </div>
+      <div class="div6" id="butt3">
+        <button id="b3" title="Применено!" onmouseover="change_txt3_3()" onmouseout="change_txt4_3()">
+          Шрифт: 54px
+        </button>
+      </div>
+    </div>
+    <br>
   </header>
   </div>
-  <div class="container">
+  <div class="container" id="con1">
     <div class="row">
       Здраствуйте, дорогие митингующие против школ!
       Сегодня Вы увидите несколько видов оружий и их необычную историю,
@@ -99,10 +123,10 @@
         Калашниковым в 1947
         году, но был принят на вооружение только в 1949.
         Есть боевое и гражданское семейство автомата Калашникова. Некоторые из них: AKM и AK-74 с их модификациями,
-        ручной пулемёт Калашникова(обычный калаш только с двуногой на конце дула и удобнее оригинала), карабины и
+        ручной пулемёт Калашникова(обычный Калашников, только с двуногой на конце дула и удобнее оригинала), карабины и
         гладкоствольные ружья "Сайга", и т.д.
         <br>
-        Итак, история автомата Калашникова(в дальнейшем AK-47).
+        <b>Итак, история автомата Калашникова(в дальнейшем AK-47).</b>
         <br>
         Отправной точкой работ по созданию автомата для советских вооружённых сил стало прошедшее 15 июля 1943 года
         совещание Технического совета при Наркомате обороны СССР, на котором по итогам изучения трофейного немецкого
@@ -124,7 +148,7 @@
         <br>
         <img src="images/AKM.png" class="col-md-3" onmouseover="change1()">
         <br>
-        А в Cs 1.6 AK-47 называется CV-47. Также AK-47... ой извиняюсь CV-47 был изменён в целях не допустить бана на Cs
+        А в Cs 1.6 AK-47 называется CV-47. Также AK... ой извиняюсь CV-47 был изменён в целях не допустить бана на Cs
         1.6 из-за авторского права.
         <br>
         В чём заключаются изменения?? А в том, что передёргивалка под названием затвор находится слева, а не справа, как
@@ -166,14 +190,17 @@
       <br>
       <img src="images/karambit.jpg" class="img responsive col-md-5 col-sm-12" onmousedown="change3()" alt="">
       <br>
-      <i class="karam" onmousedown="change_txt()">Керамбит</i>
+      <b id="karam1" onmousedown="change_txt()" ondblclick="change_txt2()">Керамбит</b>
       представляет собой небольшой индонезийской изогнутый нож , напоминающим коготь.
       <br>
-      Керамбит считается, что первоначально были боеприпас среди минангкабау(народ такой есть)
+      Считается, что Керамбит был <b><i id="karam2" onmouseover="change_txt1()">орудированным(?)</i></b> среди
+      минангкабау(народ такой есть)
       в Западной Суматре(провинция Индонезии) , где, согласно фольклору, он был вдохновлен когтями тигра . Как и
       большинство видов оружия в регионе, первоначально это было сельскохозяйственное орудие, предназначенное для того,
       чтобы собирать корни, собирать молотилку и сажать рис в большей части островной Юго-Восточной Азии. Это меньший
       вариант серпов Юго-Восточной Азии.
+      <br>
+      <img src="images/опа.png" class="img responsive col-sm-12 col-md-5" alt="">
     </div>
   </div>
   <footer>
@@ -183,6 +210,55 @@
     <br>
   </footer>
   <script>
+    function change_txt3_4(){
+     b4.textContent = 'Предпросмотр';
+     con1.style.fontSize = '16px';
+    }
+    function change_txt4_4(){
+      b4.textContent = 'Шрифт: 16px(обычный)';
+      con1.style.fontSize = '16px';
+    }
+    function change_txt2() {
+      karam1.textContent = 'Керамбит';
+    }
+    function change_txt3_1() {
+      b1.textContent = 'Предпросмотр';
+      con1.style.fontSize = '20px';
+    }
+    function change_txt3_2() {
+      b2.textContent = 'Предпросмотр';
+      con1.style.fontSize = '36px';
+    }
+    function change_txt3_3() {
+      b3.textContent = 'Предпросмотр';
+      con1.style.fontSize = '54px';
+    }
+    function change_txt4_1() {
+      b1.textContent = 'Шрифт: 20px';
+      body1.style.fontSize = '16px';
+    }
+    function change_txt4_2() {
+      b2.textContent = 'Шрифт: 36px';
+      body1.style.fontSize = '16px';
+    }
+    function change_txt4_3() {
+      b3.textContent = 'Шрифт: 54px';
+      body1.style.fontSize = '16px';
+    }
+    function change_txt1() {
+      setTimeout(() => {
+        karam2.textContent = '(кто знает перевод слова weaponized, напишите в личку пожалуйста(она находится в разделе "Контакты"))';
+      }, 10);
+      setTimeout(() => {
+        karam2.textContent = '(это, кстати, перевод гугла)';
+      }, 6000);
+      setTimeout(() => {
+        karam2.textContent = '("Ладно, не смею задерживать Ваше время.")';
+      }, 10000);
+      setTimeout(() => {
+        karam2.textContent = 'орудированным(?)';
+      }, 12500);
+    }
     function change() {
       location.href = "";
     }
@@ -214,7 +290,7 @@
       location.href = "";
     }
     function change_txt() {
-      karam.textContent = 'Керамбит(как пишется в Филиппинах и в большинстве западных стран), kerambit(используются в обоих индонезийском и малайском), kurambik, Карамболь или karambiak(оба от языка Минангкабау)';
+      karam1.textContent = 'Керамбит(как пишется в Филиппинах и в большинстве западных стран), kerambit(используются в обоих индонезийском и малайском), kurambik, Карамболь или karambiak(оба от языка Минангкабау)';
     }
   </script>
   <!-- Optional JavaScript -->
