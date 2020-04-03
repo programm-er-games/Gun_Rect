@@ -69,13 +69,13 @@
   </summary>
   <header>
     <div class="stroke" id="st1">
-      <div class="div1">Оружейный Склад</div>
-      <div class="div2">
-        <div class="glav"><a class="div2_1" href="Glavnaya.html"></a>Главная</div>
-        <div class="kont"><a class="div2_1" href="Kontakti.html"></a>Контакты</div>
-        <div class="about"><a class="div2_1" href="About.html"></a>Обо мне</div>
+      <div class="div1 bg-primary col-sm-12 col-md-6">Оружейный Склад</div>
+      <div class="div2 col-sm-3 col-md-3">
+        <div class="glav bg-danger"><a class="div2_1" href="Glavnaya.html"></a>Главная</div>
+        <div class="kont bg-warning"><a class="div2_1" href="Kontakti.html"></a>Контакты</div>
+        <div class="about bg-success"><a class="div2_1" href="About.html"></a>Обо мне</div>
       </div>
-      <div class="div3">
+      <div class="div3 bg-secondary col-sm-12 col-md-3">
         Оружия
       </div>
     </div>
@@ -83,7 +83,8 @@
     <div class="stroke" id="st2">
       <div class="div7" id="butt4">
         <button id="b4" title="Применено!" onmouseover="change_txt3_4()" onmouseout="change_txt4_4()">
-          Шрифт: 16(обычный)
+          Шрифт: 16px
+          (обычный)
         </button>
       </div>
       <div class="div4" id="butt1">
@@ -276,12 +277,13 @@
       ранее безраздельно занятых револьверами.
       <p><i>Используемые боеприпасы</i></p>
       На данный момент, пистолеты Desert Eagle
-      могут быть переоборудованы <b onmousedown="change_txt8()">под три калибра</b>.
+      могут быть переоборудованы <b id="kalibr1" onmousedown="change_txt8()">под три калибра</b>.
       Переоборудование выполняется путём замены затвора, магазина и ствола,
       и может быть выполнено в полевых условиях.
       <p></p>
-      Выпуск и продажа аксессуаров для боеприпасов
-      калибра .440 Cor-bon и .41 Magnum прекращён.
+      <i id="kalibr2" onmousedown="change_txt9()">Выпуск и продажа аксессуаров для боеприпасов
+        калибра .440 Cor-bon и .41 Magnum прекращён.</i>
+      <img class="col-sm-12 col-md-12" id="img_de" style="display: none" src="images/патроны.png">
       <p></p>
       Фирма Magnum Research
       —
@@ -301,7 +303,22 @@
       к осечкам и к неработоспособности пистолета.
       Кроме того, Magnum Research не рекомендует использовать боеприпасы,
       снаряжённые повторно из стреляных гильз.
-
+      <p></p>
+      Достоинства
+      <br>
+      Большая дальность.
+      Высокая точность.
+      Высокое останавливающее действие пули.
+      <p></p>
+      Недостатки
+      <br>
+      Большие габариты и масса.
+      Высокая отдача.
+      Высокая стоимость.
+      Невысокая надёжность.
+    </div>
+    <div class="col-sm-12 col-md-12">
+      <b>Штык - нож M9</b>
     </div>
   </div>
   <footer>
@@ -351,6 +368,19 @@
     }
     function change_txt6() {
       israel1.textContent = 'в Израиле'
+    }
+    function change_txt8() {
+      kalibr1.textContent = 'под следующие калибры боеприпасов: .50 Action Express, .44 Magnum, .357 Magnum'
+    }
+    function change_txt9() {
+      kalibr2.onclick = function c_t() {
+        img_de.style.display = 'block';
+        kalibr2.textContent = '';
+      }
+      img_de.onclick = function c_t_1() {
+        img_de.style.display = 'none';
+        kalibr2.textContent = 'Выпуск и продажа аксессуаров для боеприпасов калибра .440 Cor-bon и .41 Magnum прекращён.'
+      }
     }
     function change_txt1() {
       setTimeout(() => {
