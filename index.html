@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.index.css">
-
+  <link rel="shortcut icon" href="images/фль.png" type="image/x-icon">
 
 
 </head>
@@ -56,7 +56,7 @@
 
         <div class="dropdown color-info">
           <div class="dropdown open" id="drop1">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+            <button class="btn btn-secondary dropdown-toggle grey" type="button" id="triggerId" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               ОДБ(ОО)
             </button>
@@ -73,7 +73,7 @@
 
         <div class="dropdown color-primary">
           <div class="dropdown open" id="drop2">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+            <button class="btn btn-secondary dropdown-toggle grey" type="button" id="triggerId" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               ОББ(ХО)
             </button>
@@ -169,7 +169,14 @@
         <b>M4A4</b>
         <br>
         <img src="images/m4a4-csgo-3d-model-obj-mtl-c4d (1).jpg" class="img responsive col-md-5 col-sm-12"
-          onmousedown="change3()" alt="">
+          style="display: block;" id="m1" onmousedown="change_img4()" title="Нажми на меня!" alt="">
+        <img src="images/m4a4-csgo-3d-model-obj-mtl-c4d.jpg" class="img responsive col-md-5 col-sm-12"
+          style="display: none;" id="m2" alt="">
+        <b><i id="m5" onclick="change3()"
+            title="В фотке не хватило места для двух ссылок. Правда. Можешь нажать, если хочешь перейти на ссылку.">Кликни
+            сюда</i></b>
+        <br>
+        <br>
         M4 — автоматический карабин, созданный в США на основе
         винтовки М16А2
         <br> и изначально предназначенный для вооружения экипажей боевых машин
@@ -189,6 +196,17 @@
         Эффективная дальность стрельбы составляет:
         по одиночным целям — 500 м,
         по групповым целям — 600 м.
+        <br>
+        <br>
+        К сожалению в Кс 1.6 нету M4A4, поэтому ловите M4A1-S в Кс 1.6:
+        <img src="images/img-2020-04-05-15-21-09.png" class="img responsive col-md-5 col-sm-12"
+          onmousedown="change_img5()" title="Скучно? Можешь пострелять! Только разброс контролируйте :)"
+          style="display: block;" id="m3" alt="">
+        <img src="images/img-2020-04-05-15-20-27.png" class="img responsive col-md-5 col-sm-12" style="display: none;"
+          id="m4" alt="">
+          <br>
+          <br>
+          <b><i id="m5" onclick="change7()" title="В фотке не хватило места для двух ссылок. Правда. Можешь нажать, если хочешь перейти на ссылку.">Кликни сюда</i></b>
       </div>
     </div>
     <div class="col-sm-12 col-md-12" id="kerambit">
@@ -204,7 +222,8 @@
       в Западной Суматре(провинция Индонезии) , где, согласно фольклору, он был вдохновлен когтями тигра . Как и
       большинство видов оружия в регионе, первоначально это было сельскохозяйственное орудие, предназначенное для того,
       чтобы собирать корни, собирать молотилку и сажать рис в большей части островной Юго-Восточной Азии. Это меньший
-    вариант серпов Юго-Восточной Азии<b id="karam3" title="Опа! Ты что-то нашёл. Нажми сюда!" onmousedown="change_txt13()" onmousewheel="change_txt1">.</b>
+      вариант серпов Юго-Восточной Азии<b id="karam3" title="Опа! Ты что-то нашёл. Нажми сюда!"
+        onmousedown="change_txt13()" onmousewheel="change_txt1">.</b>
       <br>
       <img src="images/опа.png" class="img responsive col-sm-12 col-md-5" onmousedown="change5()" alt="">
     </div>
@@ -330,7 +349,8 @@
       <img title="Убери от меня этот курсор!!" id="bay2" src="images/il_570xN.1735885337_8dm7.png"
         class="img responsive" onmouseout="change_img3()" style="display: none;" alt="">
       <br>
-      <b id="bay3" onmousedown="change_txt11()" ondblclick="change_txt12()">M9 Bayonet</b> является соединением штыка и ножа официально принят США в 1986 году. Данный нож имеет 7-ми дюймовое
+      <b id="bay3" onmousedown="change_txt11()" ondblclick="change_txt12()">M9 Bayonet</b> является соединением штыка и
+      ножа официально принят США в 1986 году. Данный нож имеет 7-ми дюймовое
       лезвие и оснащён
       оболочкой, выполняющую роль кусачек(фотография).
       <img id="bay4" src="images/нож.png" style="display: none;" class="img responsive" alt="">
@@ -349,7 +369,7 @@
       В 1986-ом, Финн получил Патент Соединённых Штатов U.S. Patent 4,622,707.(патент США 4 622 707.)
       Однако они продолжали беспрепятственно поступать
       в Соединенные Штаты из Азии и Мексики, сокращаясь до законных продаж.
-
+      <br>
       Некоторые производственные циклы M9 имеют дол(?),
       а некоторые - нет, в зависимости от того,
       какой подрядчик изготовил эту партию,
@@ -357,13 +377,16 @@
       Штык М9 частично заменил старый штык М7, представленный в 1964 году.
       Хотя было заявлено, что М9 более подвержен поломкам,
       чем более старый М7, M9 оставался лучшим.
-
+      <br>
       Вариации
-
+      <br>
       Нож М11, или M11 EOD является версией M9,
       специально предназначенной для обезвреживания взрывоопасных предметов.
       Он имеет некоторые дополнительные функции(удар молотка),
       но использует то же лезвие и ножны, что и M9.
+    </div>
+    <div class="col-sm-12 col-md-12">
+      MP5 - SD
     </div>
   </div>
   <footer>
@@ -444,6 +467,27 @@
         kalibr2.textContent = 'Выпуск и продажа аксессуаров для боеприпасов калибра .440 Cor-bon и .41 Magnum прекращён.'
       }
     }
+    function change_img4() {
+      m1.style.display = 'block';
+      m2.style.display = 'block';
+    }
+    function change_img5() {
+      setTimeout(() => {
+        m3.style.display = 'none';
+        m4.style.display = 'block';
+      }, 0);
+      setTimeout(() => {
+        m3.style.display = 'block';
+        m4.style.display = 'none';
+      }, 100);
+    }
+    function change_img6() {
+
+    }
+    function change_img7() {
+      m1.style.display = 'block';
+      m2.style.display = 'none';
+    }
     function change_txt10() {
       setTimeout(() => {
         sum1.textContent = 'что-то(свои плюшки)';
@@ -458,10 +502,10 @@
     function change_txt11() {
       bay3.textContent = 'M9 Bayonet, официально известный как M9 Phrobis III, ';
     }
-    function change_txt12(){
+    function change_txt12() {
       bay4.style.display = 'block';
     }
-    function change_txt13(){
+    function change_txt13() {
       setTimeout(() => {
         karam3.textContent = '(ты нажал сюда, потому что недоволен недостатком информации,)';
       }, 50);
