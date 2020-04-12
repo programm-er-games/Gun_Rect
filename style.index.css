@@ -10,12 +10,28 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     font-size: 16px;
+    background-image: url('https://root-nation.com/wp-content/uploads/2019/10/counter-strike-global-offensive-02.jpg');
+    background-blend-mode: multiply;
+    background-size: cover;
+    color: rgba(44, 236, 243, 0.863);
+    background-color: rgba(0, 0, 255, 0.671);
+}
+
+.div1, .glav, .kont, .about, .dropdown{
+    background-image: url('https://lurkmore.so/images/thumb/0/0a/Kalash47.jpg/400px-Kalash47.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+#st3{
+    font-size: 29px;
+    background-image: url('https://b7.pngbarn.com/png/847/1019/desktop-display-resolution-desktop-environment-space-png-clip-art-thumbnail.png');
 }
 
 footer {
@@ -26,8 +42,8 @@ footer {
     background: linear-gradient(to bottom, rgb(161, 161, 161), rgb(255, 255, 255));
 }
 
-#st2{
-    background-color: #bababa;
+#st2 {
+    background-image: url('https://b7.pngbarn.com/png/847/1019/desktop-display-resolution-desktop-environment-space-png-clip-art-thumbnail.png');
     height: 2.5em;
     display: flex;
 }
@@ -36,10 +52,10 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: black;
+    border-radius: 0%;
 }
 
-.stroke{
+.stroke {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -51,4 +67,12 @@ button {
     width: 7em;
     height: 2.5em;
     display: flex;
+}
+
+#b4 {
+    width: 11em;
+}
+
+.grey{
+    background: linear-gradient(45deg, #bababa, #ffffff);
 }
