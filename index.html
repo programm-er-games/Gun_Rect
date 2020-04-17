@@ -8,16 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords" content="оружие, склад, оружейный, оружия, Оружейный, Склад, Оружейный Склад">
   <meta name="author" content="PerfeXturiumm">
+  <meta name="description"
+    content="Добро пожаловать на Оружейный Склад! Здесь собраны известные и малоизвестные оружия. Стало интересно? Тогда заходи!">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.index.css">
   <link rel="shortcut icon" href="images/фль.png" type="image/x-icon">
-
-
 </head>
 
-<body id="body1">
+<body>
 
 
 
@@ -25,13 +25,17 @@
 
   <header>
     <div class="stroke" id="st1">
-      <div class="div1 col-sm-12 col-md-6">Оружейный Склад</div>
-      <div class="div2 col-sm-3 col-md-3">
-        <div class="glav "><a class="div2_1" href="Glavnaya.html"></a>Главная</div>
-        <div class="kont "><a class="div2_1" href="Kontakti.html"></a>Контакты</div>
-        <div class="about "><a class="div2_1" href="About.html"></a>Обо мне</div>
+      <div class="st1_info col-sm-12 col-md-6">
+        <b id="orush_sklad" onmousedown="change_logo()">Оружейный Склад</b>
+        <img id="orush" src="images/оружейный1.цтп.png" style="width: 19em; display: none;" alt="">
+        <img id="sklad" src="images/склад.цтп.png" style="width: 10em; display: none;" alt="">
       </div>
-      <div class="div3 col-sm-12 col-md-3">
+      <div class="st2_info col-sm-3 col-md-3">
+        <div class="glav"><a class="div2_1" href="Glavnaya.html"></a>Главная</div>
+        <div class="kont"><a class="div2_1" href="Kontakti.html"></a>Контакты</div>
+        <div class="about"><a class="div2_1" href="About.html"></a>Обо мне</div>
+      </div>
+      <div class="st3_info col-sm-12 col-md-3">
 
         <div class="dropdown">
           <div class="dropdown open" id="drop1">
@@ -65,7 +69,7 @@
       </div>
     </div>
     <br>
-    <div class="stroke" id="st2">
+    <div class="stroke" id="st2" style="display: none;">
       <div class="div7" id="butt4">
         <button id="b4" title="Применено!" onmouseover="change_txt3_4()" onmouseout="change_txt4_4()">
           Шрифт: 16px(обычный)
@@ -262,12 +266,14 @@
       и в декабре 1985 года был получен второй патент,
       который окончательно определил вид и характеристики пистолета,
       пущенного в массовое производство.
-      <p></p>
+      <br>
+      <br>
       Первая партия в 1000 пистолетов калибра .357 Magnum
       является на сегодняшний день коллекционным раритетом,
       потому что их стволы нарезаны традиционной нарезкой,
       и эти пистолеты нельзя переделать под другие калибры.
-      <p></p>
+      <br>
+      <br>
       Массовое производство пистолета было начато
       на заводах Israel Military Industries
       <b id="israel1" onmousedown="change_txt5()" ondblclick="change_txt6()">в Израиле.</b>
@@ -681,6 +687,13 @@
     }
     function change_txt() {
       karam1.textContent = 'Керамбит(как пишется в Филиппинах и в большинстве западных стран), kerambit(используются в обоих индонезийском и малайском), kurambik, Карамболь или karambiak(оба от языка Минангкабау)';
+    }
+    function change_logo(){
+      orush_sklad.style.display = 'none';
+      orush.style.display = 'block';
+      sklad.style.display = 'block';
+      orush.style.background = 'white';
+      sklad.style.background = 'white';
     }
   </script>
   <!-- Optional JavaScript -->
