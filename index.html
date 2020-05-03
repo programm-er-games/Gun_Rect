@@ -15,6 +15,45 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.index.css">
   <link rel="shortcut icon" href="images/фль.png" type="image/x-icon">
+  <style>
+    @keyframes hova {
+      0% {
+        background-color: red;
+      }
+
+      10% {
+        background-color: orange;
+      }
+
+      25% {
+        background-color: yellow;
+      }
+
+      40% {
+        background-color: green;
+      }
+
+      55% {
+        background-color: rgb(101, 101, 216);
+      }
+
+      80% {
+        background-color: blue;
+      }
+
+      95% {
+        background-color: violet;
+      }
+
+      100% {
+        background-color: red;
+      }
+    }
+
+    .zagol:hover {
+      animation: hova 7s infinite;
+    }
+  </style>
 </head>
 
 <body>
@@ -32,15 +71,18 @@
       </div>
       <div class="st2_info col-sm-3 col-md-3">
         <div class="glav" onclick="change_glav()"><a class="div2_1" href="Glavnaya.html"><img
-              src="images/Главная.цтп.png" style="width: 20em; display: none;" id="glav_img" alt=""></a><b id="glav_txt" style="display: block;">Главная</b></div>
+              src="images/Главная.цтп.png" style="width: 20em; display: none;" id="glav_img" alt=""></a><b id="glav_txt"
+            style="display: block;">Главная</b></div>
         <div class="kont" onclick="change_kont()"><a class="div2_1" href="Kontakti.html"><img
-              src="images/Контакты.цтп.png" style="width: 20em; display: none;" id="kont_img" alt=""></a><b id="kont_txt" style="display: block;">Контакты</b></div>
+              src="images/Контакты.цтп.png" style="width: 20em; display: none;" id="kont_img" alt=""></a><b
+            id="kont_txt" style="display: block;">Контакты</b></div>
         <div class="about" onclick="change_about()"><a class="div2_1" href="About.html"><img
-              src="images/Обо мне.цтп.png" style="width: 20em; display: none;" id="about_img" alt=""></a><b id="about_txt" style="display: block;">Обо мне</b></div>
+              src="images/Обо мне.цтп.png" style="width: 20em; display: none;" id="about_img" alt=""></a><b
+            id="about_txt" style="display: block;">Обо мне</b></div>
       </div>
       <div class="st3_info col-sm-12 col-md-3">
 
-        <div class="dropdown">
+        <div class="dropdown" style="display: none;">
           <div class="dropdown open" id="drop1">
             <button class="btn btn-secondary dropdown-toggle grey" type="button" id="triggerId" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
@@ -48,7 +90,7 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="triggerId">
               <button class="dropdown-item" href="#Ak-47">Action</button>
-              <button class="dropdown-item" href="#">Action</button>
+              <button class="dropdown-item" href="#m4a4">Action</button>
               <button class="dropdown-item" href="#">Action</button>
               <button class="dropdown-item" href="#">Action</button>
               <button class="dropdown-item" href="#">Action</button>
@@ -112,7 +154,7 @@
             <p class="podrobnee">с которого я брал или вдохновлялся информацией.</p>
             <p class="podrobnee">Есть и картинки, в которых ничего нет, т.е. имеют либо <i id="sum1"
                 onmousedown="change_txt10()">что-то</i>, либо ничего.</p>
-            <p></p>
+            <br>
             <p>Теперь, ознакомившись внимательно с пояснениями, можете закрыть данное меню.</p>
           </b>
         </details>
@@ -131,8 +173,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12 col-md-12" id="Ak-47">
-        <b>AK-47</b>
-        <br>
+        <p class="zagol" title="Прикол."><b>AK-47</b></p>
         <p id="ak1" style="display: none;">Давайте начнём с легенды легенд - автомата Калашникова!</p>
         <img src="images/AK-47_assault_rifle.jpg" class="col-sm-12 col-md-5" id="AK47" onmousedown="change()">
         <br>
@@ -168,19 +209,17 @@
           справа, как
           показано в <a href="#AK47">оригинале</a>.</p>
         <br>
-        <img src="images/34762185.png" onmousedown="change2()">
+        <div class="col-sm-12 col-md-12 1"></div><img src="images/34762185.png" onmousedown="change2()">
         <p>Для справки: оригинальная версия AK-47 показана справа. Там чётко и ясно видно, что затвор находится
           справа, раз
           оригинал был показан справа.</p>
       </div>
       <div class="col-sm-12 col-md-12" id="m4a4">
-        <b>M4A4</b>
-        <br>
+        <p class="zagol" title="Прикол."><b>M4A4</b></p>
         <img src="images/m4a4-csgo-3d-model-obj-mtl-c4d (1).jpg" class="img responsive col-md-5 col-sm-12"
-          style="display: block;" id="m1" onmousedown="change_img4()" title="Нажми на меня!" alt="">
-        <img src="images/m4a4-csgo-3d-model-obj-mtl-c4d.jpg" class="img responsive col-md-5 col-sm-12"
-          style="display: none;" id="m2" alt="">
-        <b><i id="m5" onclick="change3()"
+          style="display: block;" id="m1" onmousedown="change_img4()" onclick="to()" title="Нажми на меня!" alt="">
+        <img src="images/m4a4-csgo-3d-model-obj-mtl-c4d.jpg" style="display: none;" id="m2" onclick="change3()" alt="">
+        <b><i id="m5"
             title="В фотке не хватило места для двух ссылок. Правда. Можешь нажать, если хочешь перейти на ссылку.">Кликни
             сюда</i></b>
         <p>M4 — автоматический карабин, созданный в США на основе
@@ -212,24 +251,22 @@
       </div>
     </div>
     <div class="col-sm-12 col-md-12" id="kerambit">
-      <b>Karambit</b>
-      <br>
-      <img src="images/karambit.jpg" onmousedown="change4()" alt="">
-      <p></p> <b id="karam1" onmousedown="change_txt()" ondblclick="change_txt2()">Керамбит</b>
-      представляет собой небольшой индонезийской изогнутый нож , напоминающим коготь.
-      <p></p> Считается, что Керамбит был <b><i id="karam2" onmouseover="change_txt1()">орудированным(?)</i></b> среди
-      минангкабау(народ такой есть)
-      в Западной Суматре(провинция Индонезии) , где, согласно фольклору, он был вдохновлен когтями тигра . Как и
-      большинство видов оружия в регионе, первоначально это было сельскохозяйственное орудие, предназначенное для того,
-      чтобы собирать корни, собирать молотилку и сажать рис в большей части островной Юго-Восточной Азии. Это меньший
-      вариант серпов Юго-Восточной Азии<b id="karam3" title="Опа! Ты что-то нашёл. Нажми сюда!"
-        onmousedown="change_txt13()" onmousewheel="change_txt1">.</b>
-      <br>
+      <p class="zagol" title="Прикол."><b>Karambit</b></p>
+      <img src="images/karambit.jpg" style="width: 20em; height: 20em;" onmousedown="change4()" alt="">
+      <p><b id="karam1" title="Нажми сюда! Здесь что-то познавательное." onmousedown="change_txt()" ondblclick="change_txt2()">Керамбит</b>
+        представляет собой небольшой индонезийской изогнутый нож , напоминающим коготь.</p>
+      <p>Считается, что Керамбит был <b><i id="karam2" onmouseover="change_txt1()">орудированным(?)</i></b> среди
+        минангкабау(народ такой есть)
+        в Западной Суматре(провинция Индонезии), где, согласно фольклору, он был вдохновлен когтями тигра . Как и
+        большинство видов оружия в регионе, первоначально это было сельскохозяйственное орудие, предназначенное для
+        того,
+        чтобы собирать корни, собирать молотилку и сажать рис в большей части островной Юго-Восточной Азии. Это меньший
+        вариант серпов Юго-Восточной Азии<b id="karam3" title="Опа! Ты что-то нашёл. Нажми сюда!"
+          onmousedown="change_txt13()" onmousewheel="change_txt1">.</b></p>
       <img src="images/опа.png" onmousedown="change5()" alt="">
     </div>
     <div class="col-sm-12 col-md-12">
-      <b>Desert Eagle</b>
-      <br>
+      <p class="zagol" title="Прикол."><b>Desert Eagle</b></p>
       <img src="images/540px-TM_Desert_Eagle_CHROME_STAINLESS_GBB.jpg" onmousedown="change6()" alt="">
       <p>Хочу начать список пистолетов с довольно известного Desert Eagle.</p>
       <p>Desert Eagle (с англ. — «Пустынный орёл»)
@@ -334,12 +371,12 @@
       </ol>
     </div>
     <div class="col-sm-12 col-md-12">
-      <b>Штык - нож M9</b>
+      <p class="zagol" title="Прикол."><b>Штык - нож M9</b></p>
       <br>
       <img title="Нажми на меня!" id="bay1" src="images/insr yj;.png" class="img responsive" onmousedown="change_img1()"
         ondblclick="change_img2()" alt="">
-      <img title="Убери от меня этот курсор!!" id="bay2" src="images/il_570xN.1735885337_8dm7.png"
-        class="img responsive" onmouseout="change_img3()" style="display: none;" alt="">
+      <img id="bay2" src="images/il_570xN.1735885337_8dm7.png" class="img responsive" onmouseout="change_img3()"
+        style="display: none;" alt="">
       <p><b id="bay3" onmousedown="change_txt11()" ondblclick="change_txt12()">M9 Bayonet</b> является соединением
         штыка и
         ножа официально принят США в 1986 году. Данный нож имеет 7-ми дюймовое
@@ -374,8 +411,7 @@
         но использует то же лезвие и ножны, что и M9.</p>
     </div>
     <div class="col-sm-12 col-md-12">
-      <b>MP5 - SD</b>
-      <br>
+      <p class="zagol" title="Прикол."><b>MP5 - SD</b></p>
       <img src="" class="img responsive" alt="">
       <p></p> Heckler & Koch MP5 (Maschinenpistole 5 — пистолет-пулемёт, модель № 5)
       — семейство пистолетов-пулемётов,
@@ -469,10 +505,19 @@
     <br>
     <br>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9">function to() {
+      Swal.fire({
+        icon: 'info',
+        title: 'прикол',
+        text: 'А почему?',
+        footer: 'gfhпар'
+      })
+    }</script>
   <script>
     if (podrobnee_button.style.width == '700px') {
       podrobnee_button.style.width = '250px';
     }
+
     function change_img1() {
       bay1.style.width = '200px';
       bay1.style.title = 'А теперь нажми сюда два раза!'
@@ -634,11 +679,11 @@
     function change_glav() {
       glav_img.style.display = 'block';
       glav_txt.style.display = 'none';
-    } 
+    }
     function change_kont() {
       kont_img.style.display = 'block';
       kont_txt.style.display = 'none';
-    } 
+    }
     function change_about() {
       about_img.style.display = 'block';
       about_txt.textContent = '';
