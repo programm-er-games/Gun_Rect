@@ -50,8 +50,172 @@
       }
     }
 
+    @keyframes hova1 {
+      0% {
+        -moz-transform: rotate(-1deg);
+        -o-transform: rotate(-1deg);
+        -webkit-transform: rotate(-1deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.1);
+      }
+
+      10% {
+        -moz-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.5);
+      }
+
+      20% {
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.10);
+      }
+
+      30% {
+        -moz-transform: rotate(-20deg);
+        -o-transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.20);
+      }
+
+      40% {
+        -moz-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=1);
+      }
+
+      50% {
+        -moz-transform: rotate(-50deg);
+        -o-transform: rotate(-50deg);
+        -webkit-transform: rotate(-50deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=1.9);
+      }
+
+      60% {
+        -moz-transform: rotate(-70deg);
+        -o-transform: rotate(-70deg);
+        -webkit-transform: rotate(-70deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2.8);
+      }
+
+      70% {
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+      }
+
+      80% {
+        -moz-transform: rotate(-130deg);
+        -o-transform: rotate(-130deg);
+        -webkit-transform: rotate(-130deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=4.2);
+      }
+
+      90% {
+        -moz-transform: rotate(-180deg);
+        -o-transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=6);
+      }
+
+      100% {
+        -moz-transform: rotate(-230deg);
+        -o-transform: rotate(-230deg);
+        -webkit-transform: rotate(-230deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=7.9);
+      }
+
+      110% {
+        -moz-transform: rotate(-280deg);
+        -o-transform: rotate(-280deg);
+        -webkit-transform: rotate(-280deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=8.2);
+      }
+
+      110% {
+        -moz-transform: rotate(-350deg);
+        -o-transform: rotate(-350deg);
+        -webkit-transform: rotate(-350deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=10.6);
+      }
+
+      110% {
+        -moz-transform: rotate(-400deg);
+        -o-transform: rotate(-400deg);
+        -webkit-transform: rotate(-400deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=12.3);
+      }
+
+      110% {
+        -moz-transform: rotate(-460deg);
+        -o-transform: rotate(-460deg);
+        -webkit-transform: rotate(-460deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=15.3);
+      }
+
+      110% {
+        -moz-transform: rotate(-550deg);
+        -o-transform: rotate(-550deg);
+        -webkit-transform: rotate(-550deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=18.3);
+      }
+
+      110% {
+        -moz-transform: rotate(-660deg);
+        -o-transform: rotate(-660deg);
+        -webkit-transform: rotate(-660deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=22);
+      }
+    }
+
+    @keyframes hova1_test1 {
+      0% {
+        -moz-transform: rotate(-50deg);
+        -o-transform: rotate(-50deg);
+        -webkit-transform: rotate(-50deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=1.9);
+      }
+
+      50% {
+        -moz-transform: rotate(-1080deg);
+        -o-transform: rotate(-1080deg);
+        -webkit-transform: rotate(-1080deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=36);
+      }
+
+      100% {
+        -moz-transform: rotate(-6080deg);
+        -o-transform: rotate(-6080deg);
+        -webkit-transform: rotate(-6080deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=66);
+      }
+    }
+
+    @keyframes hova1_test2 {
+      0% {
+        -moz-transform: rotate(-0deg);
+        -o-transform: rotate(-0deg);
+        -webkit-transform: rotate(-0deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0);
+      }
+
+      100% {
+        -moz-transform: rotate(-10000deg);
+        -o-transform: rotate(-10000deg);
+        -webkit-transform: rotate(-10000deg);
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=1985);
+      }
+    }
+
     .zagol:hover {
       animation: hova 7s infinite;
+    }
+
+    #karam_img:hover {
+      animation: hova1_test2 10s;
     }
   </style>
 </head>
@@ -82,22 +246,7 @@
       </div>
       <div class="st3_info col-sm-12 col-md-3">
 
-        <div class="dropdown" style="display: none;">
-          <div class="dropdown open" id="drop1">
-            <button class="btn btn-secondary dropdown-toggle grey" type="button" id="triggerId" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              ОДБ(ОО)
-            </button>
-            <div class="dropdown-menu" aria-labelledby="triggerId">
-              <button class="dropdown-item" href="#Ak-47">Action</button>
-              <button class="dropdown-item" href="#m4a4">Action</button>
-              <button class="dropdown-item" href="#">Action</button>
-              <button class="dropdown-item" href="#">Action</button>
-              <button class="dropdown-item" href="#">Action</button>
-              <button class="dropdown-item" href="#">Action</button>
-            </div>
-          </div>
-        </div>
+
 
         <div class="dropdown">
           <div class="dropdown open" id="drop2">
@@ -164,14 +313,14 @@
     <br>
   </header>
   </div>
-  <div class="container" id="con1">
-    <div class="row">
+  <main>
+    <div class="main" id="main1">
       Здраствуйте, дорогие митингующие против школ!
       Сегодня Вы увидите несколько видов оружий и их необычную историю,
       а также, как они изображены в таких играх, как: Battlefield, PUBG, CS:GO и легендарной Cs 1.6(но это не точно).
       Давайте начнём!
     </div>
-    <div class="row">
+    <div class="main" id="main2">
       <div class="col-sm-12 col-md-12" id="Ak-47">
         <p class="zagol" title="Прикол."><b>AK-47</b></p>
         <p id="ak1" style="display: none;">Давайте начнём с легенды легенд - автомата Калашникова!</p>
@@ -200,7 +349,6 @@
           он имел калибр 7,62×41 мм, но впоследствии был переработан, т.е. калибр был изменён на 7,62×39 мм.</p>
         <p>В Battlefield и CS:GO AK-47 ничем не отличается от оригинала, но в PUBG-е AK-47 заменён на АКМ (Avtomat
           Kalashnikova Modernizirovanny, т.е. модернизированный автомат Калашникова) и вот как он выглядит:</p>
-        <br>
         <img src="images/AKM.png" onmousedown="change1()">
         <p>А в Cs 1.6 AK-47 называется CV-47. Также AK... ой извиняюсь CV-47 был изменён в целях не допустить бана
           на Cs 1.6 из-за авторского права, т.к. компания "Valve" ещё не была такой богатой, чтобы справиться с этим.
@@ -252,8 +400,9 @@
     </div>
     <div class="col-sm-12 col-md-12" id="kerambit">
       <p class="zagol" title="Прикол."><b>Karambit</b></p>
-      <img src="images/karambit.jpg" style="width: 20em; height: 20em;" onmousedown="change4()" alt="">
-      <p><b id="karam1" title="Нажми сюда! Здесь что-то познавательное." onmousedown="change_txt()" ondblclick="change_txt2()">Керамбит</b>
+      <img id="karam_img" src="images/karambit.jpg" style="width: 20em; height: 20em;" onmousedown="change4()" alt="">
+      <p><b id="karam1" title="Нажми сюда! Здесь что-то познавательное." onmousedown="change_txt()"
+          ondblclick="change_txt2()">Керамбит</b>
         представляет собой небольшой индонезийской изогнутый нож , напоминающим коготь.</p>
       <p>Считается, что Керамбит был <b><i id="karam2" onmouseover="change_txt1()">орудированным(?)</i></b> среди
         минангкабау(народ такой есть)
@@ -264,6 +413,7 @@
         вариант серпов Юго-Восточной Азии<b id="karam3" title="Опа! Ты что-то нашёл. Нажми сюда!"
           onmousedown="change_txt13()" onmousewheel="change_txt1">.</b></p>
       <img src="images/опа.png" onmousedown="change5()" alt="">
+      <audio src="music/Dead Or Alive - You Spin Me Round Like a Record.mp3" visible></audio>
     </div>
     <div class="col-sm-12 col-md-12">
       <p class="zagol" title="Прикол."><b>Desert Eagle</b></p>
@@ -498,7 +648,7 @@
           оружию на базе винтовки G3.</li>
       </ol>
     </div>
-  </div>
+  </main>
   <footer>
     <br>
     Всё законно. Perfexturiumm, 2020. Все права мои и они защищены.
