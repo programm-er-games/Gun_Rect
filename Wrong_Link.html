@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&nbsp;</title>
+    <style>
+        @keyframes hova1 {
+            0% {
+                -webkit-transform: translateX(45px);
+                -webkit-transform: rotate(1800deg);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20%;
+            animation: 10s hova1;
+        }
+    </style>
+</head>
+
+<body>
+    <b title="Наведи на крутяшку!">.</b>
+    <h1 onmouseout="changeLocation()" title="Жди.">Вот прикол-то получился</h1>
+    <script src="anime.js"></script>
+    <script>
+        function changeLocation() {
+            setTimeout(() => {
+                location.href = 'index.html';
+            }, 3000);
+        }
+
+        
+    </script>
+</body>
+
+</html>

@@ -217,15 +217,38 @@
     #karam_img:hover {
       animation: hova1_test2 10s;
     }
+
+    nav>span {
+      color: black;
+      transition: 0.8s;
+      background-image: url('https://c7.hotpng.com/preview/839/2/404/stray-bullet-firearm-cartridge-butch-bullet-stein-bullets-png-image.jpg');
+      background-position: center;
+      background-blend-mode: multiply;
+      padding-top: 1%;
+      width: 140px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      border-radius: 40px;
+      color: rgb(193, 206, 243);
+    }
+
+    image>nav {
+      background-size: cover;
+      height: 10em;
+      background-position: center;
+      background-blend-mode: multiply;
+    }
+
+    a {
+      color: rgb(160, 189, 132);
+    }
+
+    a:hover {
+      color: rgb(192, 241, 143);
+    }
   </style>
 </head>
 
 <body>
-
-
-
-
-
   <header>
     <div class="stroke" id="st1">
       <div class="st1_info col-sm-12 col-md-6">
@@ -244,24 +267,8 @@
               src="images/Обо мне.цтп.png" style="width: 20em; display: none;" id="about_img" alt=""></a><b
             id="about_txt" style="display: block;">Обо мне</b></div>
       </div>
-      <div class="st3_info col-sm-12 col-md-3">
-
-
-
-        <div class="dropdown">
-          <div class="dropdown open" id="drop2">
-            <button class="btn btn-secondary dropdown-toggle grey" type="button" id="triggerId" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              ОББ(ХО)
-            </button>
-            <div class="dropdown-menu" aria-labelledby="triggerId">
-              <button class="dropdown-item" href="#">Керамбит</button>
-              <button class="dropdown-item" href="#">Штык-нож M9</button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+
     <br>
     <div class="stroke" id="st2" style="display: none;">
       <div class="div7" id="butt4">
@@ -299,16 +306,26 @@
           <b>
             <p class="podrobnee">В картинках есть ссылки на определённые источники.</p>
             <p class="podrobnee">Т. е., если вам что-то стало непонятно по поводу того или иного оружия,</p>
-            <p class="podrobnee">то Вы можете нажать на картинку и вас перекинет на источник,</p>
+            <p class="podrobnee">то Вы <br>можете нажать на картинку <br>и вас перекинет на источник,</p>
             <p class="podrobnee">с которого я брал или вдохновлялся информацией.</p>
-            <p class="podrobnee">Есть и картинки, в которых ничего нет, т.е. имеют либо <i id="sum1"
-                onmousedown="change_txt10()">что-то</i>, либо ничего.</p>
-            <br>
-            <p>Теперь, ознакомившись внимательно с пояснениями, можете закрыть данное меню.</p>
+            <p class="podrobnee">Есть и картинки, в которых ничего нет,
+              <br> т.е. имеют либо <i id="sum1" onmousedown="change_txt10()">что-то</i>, либо ничего.</p>
+
+            <p class="podrobnee">Теперь, ознакомившись внимательно с пояснениями,
+              <br>можете закрыть данное меню.</p>
           </b>
         </details>
       </summary>
     </div>
+
+    <nav>
+      <span onclick="span1()" id="ak-47">AK-47</span>
+      <span onclick="span2()" id="m4a4">M4A4</span>
+      <span onclick="span3()" id="kerambit">Karambit</span>
+      <span onclick="span4()" id="deagle">Desert Eagle</span>
+      <span onclick="span5()" id="bay">M9 Bayonet</span>
+      <span onclick="span6()" id="mp5-sd">MP5 - SD</span>
+    </nav>
 
     <br>
   </header>
@@ -321,9 +338,9 @@
       Давайте начнём!
     </div>
     <div class="main" id="main2">
-      <div class="col-sm-12 col-md-12" id="Ak-47">
-        <p class="zagol" title="Прикол."><b>AK-47</b></p>
-        <p id="ak1" style="display: none;">Давайте начнём с легенды легенд - автомата Калашникова!</p>
+      <div class="col-sm-12 col-md-12">
+        <p class="zagol" title="Прикол."><b id="Ak-47">AK-47</b></p>
+        <p onmousedown="anima1()" id="ak1">Давайте начнём с легенды легенд - автомата Калашникова!</p>
         <img src="images/AK-47_assault_rifle.jpg" class="col-sm-12 col-md-5" id="AK47" onmousedown="change()">
         <br>
         <p> Данный автомат был создан Михаилом Тимофеевичем
@@ -357,18 +374,19 @@
           справа, как
           показано в <a href="#AK47">оригинале</a>.</p>
         <br>
-        <div class="col-sm-12 col-md-12 1"></div><img src="images/34762185.png" onmousedown="change2()">
+        <div class="col-sm-12 col-md-12 1"></div><img src="images/34762185.png">
         <p>Для справки: оригинальная версия AK-47 показана справа. Там чётко и ясно видно, что затвор находится
           справа, раз
           оригинал был показан справа.</p>
       </div>
-      <div class="col-sm-12 col-md-12" id="m4a4">
-        <p class="zagol" title="Прикол."><b>M4A4</b></p>
+      <div class="col-sm-12 col-md-12">
+        <p class="zagol" title="Прикол."><b id="M4A4">M4A4</b></p>
         <img src="images/m4a4-csgo-3d-model-obj-mtl-c4d (1).jpg" class="img responsive col-md-5 col-sm-12"
-          style="display: block;" id="m1" onmousedown="change_img4()" onclick="to()" title="Нажми на меня!" alt="">
+          style="display: block;" id="m1" onmousedown="change_img4()" title="Нажми на меня!" alt="">
         <img src="images/m4a4-csgo-3d-model-obj-mtl-c4d.jpg" style="display: none;" id="m2" onclick="change3()" alt="">
         <b><i id="m5"
-            title="В фотке не хватило места для двух ссылок. Правда. Можешь нажать, если хочешь перейти на ссылку.">Кликни
+            title="В фотке не хватило места для двух ссылок. Правда. Можешь нажать, если хочешь перейти на ссылку."
+            onclick="change2()">Кликни
             сюда</i></b>
         <p>M4 — автоматический карабин, созданный в США на основе
           винтовки М16А2</p>
@@ -388,19 +406,19 @@
           <li>по групповым целям — 600 м;</li>
         </ol>
         <p>К сожалению в Кс 1.6 нету M4A4, поэтому ловите M4A1-S в Кс 1.6:</p>
-        <img src="images/img-2020-04-05-15-21-09.png" class="img responsive col-md-5 col-sm-12"
-          onmousedown="change_img5()" title="Скучно? Можешь пострелять! Только разброс контролируйте :)"
-          style="display: block;" id="m3" alt="">
+        <img src="images/img-2020-04-05-15-21-09.png" class="img responsive col-md-5 col-sm-12" style="display: block;"
+          id="m3" alt="" onclick="change7()">
         <img src="images/img-2020-04-05-15-20-27.png" class="img responsive col-md-5 col-sm-12" style="display: none;"
           id="m4" alt="">
-        <b><i id="m5" onclick="change7()"
+        <b><i id="m5" onclick="change2()"
             title="В фотке не хватило места для двух ссылок. Правда. Можешь нажать, если хочешь перейти на ссылку.">Кликни
             сюда</i></b>
       </div>
     </div>
-    <div class="col-sm-12 col-md-12" id="kerambit">
-      <p class="zagol" title="Прикол."><b>Karambit</b></p>
-      <img id="karam_img" src="images/karambit.jpg" style="width: 20em; height: 20em;" onmousedown="change4()" alt="">
+    <div class="col-sm-12 col-md-12">
+      <p class="zagol" title="Прикол." id="Karambit"><b>Karambit</b></p>
+      <img title="Смотри. Ещё прикол." id="karam_img" src="images/karambit.jpg" style="width: 20em; height: 20em;"
+        onmousedown="change4()" alt="">
       <p><b id="karam1" title="Нажми сюда! Здесь что-то познавательное." onmousedown="change_txt()"
           ondblclick="change_txt2()">Керамбит</b>
         представляет собой небольшой индонезийской изогнутый нож , напоминающим коготь.</p>
@@ -411,12 +429,12 @@
         того,
         чтобы собирать корни, собирать молотилку и сажать рис в большей части островной Юго-Восточной Азии. Это меньший
         вариант серпов Юго-Восточной Азии<b id="karam3" title="Опа! Ты что-то нашёл. Нажми сюда!"
-          onmousedown="change_txt13()" onmousewheel="change_txt1">.</b></p>
-      <img src="images/опа.png" onmousedown="change5()" alt="">
-      <audio src="music/Dead Or Alive - You Spin Me Round Like a Record.mp3" visible></audio>
+          onmousedown="change_txt13()" onmousewheel="change_txt1" style="cursor: pointer;">.</b></p>
+      <img src="images/опа.png" onmousedown="change2()" alt="">
+      <audio src="music/Dead Or Alive - You Spin Me Round Like a Record.mp3"></audio>
     </div>
     <div class="col-sm-12 col-md-12">
-      <p class="zagol" title="Прикол."><b>Desert Eagle</b></p>
+      <p class="zagol" title="Прикол." id="D-eagle"><b>Desert Eagle</b></p>
       <img src="images/540px-TM_Desert_Eagle_CHROME_STAINLESS_GBB.jpg" onmousedown="change6()" alt="">
       <p>Хочу начать список пистолетов с довольно известного Desert Eagle.</p>
       <p>Desert Eagle (с англ. — «Пустынный орёл»)
@@ -521,12 +539,12 @@
       </ol>
     </div>
     <div class="col-sm-12 col-md-12">
-      <p class="zagol" title="Прикол."><b>Штык - нож M9</b></p>
+      <p class="zagol" title="Прикол." id="Bayonet"><b>Штык - нож M9</b></p>
       <br>
       <img title="Нажми на меня!" id="bay1" src="images/insr yj;.png" class="img responsive" onmousedown="change_img1()"
         ondblclick="change_img2()" alt="">
       <img id="bay2" src="images/il_570xN.1735885337_8dm7.png" class="img responsive" onmouseout="change_img3()"
-        style="display: none;" alt="">
+        style="display: none;" alt="" onclick="change5()">
       <p><b id="bay3" onmousedown="change_txt11()" ondblclick="change_txt12()">M9 Bayonet</b> является соединением
         штыка и
         ножа официально принят США в 1986 году. Данный нож имеет 7-ми дюймовое
@@ -561,48 +579,48 @@
         но использует то же лезвие и ножны, что и M9.</p>
     </div>
     <div class="col-sm-12 col-md-12">
-      <p class="zagol" title="Прикол."><b>MP5 - SD</b></p>
-      <img src="" class="img responsive" alt="">
-      <p></p> Heckler & Koch MP5 (Maschinenpistole 5 — пистолет-пулемёт, модель № 5)
-      — семейство пистолетов-пулемётов,
-      разработанных немецким производителем стрелкового оружия,
-      фирмой Heckler & Koch (HK) в 1960-х годах на основе HK G3.
-      <p></p> Пистолет-пулемёт MP5 был впервые представлен фирмой Heckler & Koch в 1966 году,
-      под названием HK54. Это название было выбрано
-      согласно старой системе нумерации моделей фирмы:
-      число «5» определяло оружие как пистолет-пулемёт, а
-      число «4» определяло что пистолет-пулемёт создан под патрон 9×19 мм Парабеллум.
-      Современное название он получил после того, как в середине 1966 года,
-      правительство ФРГ приняло его на вооружение полиции и пограничной службы
-      как Maschinenpistole 5, или сокращённо MP5.
-      Благодаря использованию пистолета-пулемёта немецким контртеррористическим
-      отрядом GSG 9, который являлся частью пограничной службы,
-      аналогичные специальные подразделения других западных
-      стран получили возможность ознакомиться с его характеристиками.
-      <p></p> Для расширения области возможных применений пистолетов-пулемётов
-      были созданы различные ответвления:
-      <i id="mp5" onmousedown="change_txt16()">малокалиберное личное оружие самообороны,</i>
-      например HK MP7 и компактные карабины такие как M4,
-      G36C — укороченный вариант автомата HK G36,
-      и XM8, также основанный на G36. Фирма Heckler & Koch начала замещение
-      линейки MP5 более дешёвой моделью HK UMP,
-      которая доступна в вариантах <i id="mp5#" onmousedown="change_txt17()">под патроны</i>
-      Однако поскольку UMP использует более простую автоматику со свободным затвором,
-      он не может быть достойным конкурентом MP5 для требовательных стрелков.
-      <p></p> Автоматика MP5 действует по принципу полусвободного затвора,
-      стрельба ведётся с закрытого затвора.
-      Ударно-спусковой механизм куркового типа обеспечивает
-      стрельбу в автоматическом и одиночном режиме.
-      Предохранитель одновременно является переводчиком режима огня.
-      Его рычаг расположен возле рукоятки управления огнём с левой
-      стороны. При постановке на предохранитель блокируется спусковой крючок и курок, что обеспечивает безопасность в
-      обращении с оружием.
-      <p></p> Запирание затвора в переднем положении осуществляется роликами,
-      одновременно играющими роль ускорителя затвора.
-      Такая конструкция позволила снизить отдачу и повысить кучность стрельбы.
-      Прицел барабанного типа, диоптрический или <i id="mp5##">открытый</i>.
-      <b><i id="mp5###" style="display: none;" title="Ща что-то будет... Но сначала нажми!!"
-          onmousedown="change_txt18()">Достоинства и недостатки</i></b>
+      <p class="zagol" title="Прикол." id="MP5-SD"><b>MP5 - SD</b></p>
+      <img src="images/Heckler_&_Koch_MP5.jpg" onclick="change8()" class="img responsive" alt="">
+      <p>Heckler & Koch MP5 (Maschinenpistole 5 — пистолет-пулемёт, модель № 5)
+        — семейство пистолетов-пулемётов,
+        разработанных немецким производителем стрелкового оружия,
+        фирмой Heckler & Koch (HK) в 1960-х годах на основе HK G3.</p>
+      <p>Пистолет-пулемёт MP5 был впервые представлен фирмой Heckler & Koch в 1966 году,
+        под названием HK54. Это название было выбрано
+        согласно старой системе нумерации моделей фирмы:
+        число «5» определяло оружие как пистолет-пулемёт, а
+        число «4» определяло что пистолет-пулемёт создан под патрон 9×19 мм Парабеллум.
+        Современное название он получил после того, как в середине 1966 года,
+        правительство ФРГ приняло его на вооружение полиции и пограничной службы
+        как Maschinenpistole 5, или сокращённо MP5.
+        Благодаря использованию пистолета-пулемёта немецким контртеррористическим
+        отрядом GSG 9, который являлся частью пограничной службы,
+        аналогичные специальные подразделения других западных
+        стран получили возможность ознакомиться с его характеристиками.</p>
+      <p>Для расширения области возможных применений пистолетов-пулемётов
+        были созданы различные ответвления:
+        <i id="mp5" onmousedown="change_txt16()">малокалиберное личное оружие самообороны,</i>
+        например HK MP7 и компактные карабины такие как M4,
+        G36C — укороченный вариант автомата HK G36,
+        и XM8, также основанный на G36. Фирма Heckler & Koch начала замещение
+        линейки MP5 более дешёвой моделью HK UMP,
+        которая доступна в вариантах <i id="mp5#" onmousedown="change_txt17()">под патроны</i>
+        Однако поскольку UMP использует более простую автоматику со свободным затвором,
+        он не может быть достойным конкурентом MP5 для требовательных стрелков.</p>
+      <p>Автоматика MP5 действует по принципу полусвободного затвора,
+        стрельба ведётся с закрытого затвора.
+        Ударно-спусковой механизм куркового типа обеспечивает
+        стрельбу в автоматическом и одиночном режиме.
+        Предохранитель одновременно является переводчиком режима огня.
+        Его рычаг расположен возле рукоятки управления огнём с левой
+        стороны. При постановке на предохранитель блокируется спусковой крючок и курок, что обеспечивает безопасность в
+        обращении с оружием.</p>
+      <p>Запирание затвора в переднем положении осуществляется роликами,
+        одновременно играющими роль ускорителя затвора.
+        Такая конструкция позволила снизить отдачу и повысить кучность стрельбы.
+        Прицел барабанного типа, диоптрический или открытый.</p>
+        <img src="images/ghbrjk.png" class="img responsive" onclick="change9()" alt="">
+      <p><b><i id="mp5###" style="display: block;" onmousedown="change_txt18()">Достоинства и недостатки</i></b></p>
       <p><b><i id="mp5###1" style="display: block;">Достоинства</i></b></p>
       <ol>
         <li>Длина ствола в 225 мм гарантирует максимальный переход энергии пороха
@@ -620,7 +638,7 @@
         <li>Добротная, прочная конструкция.</li>
       </ol>
 
-      <p></p> <b><i id="mp5###2" style="display: block;">Недостатки</i></b>
+      <p><b><i id="mp5###2" style="display: block;">Недостатки</i></b></p>
       <ol>
         <li>Себестоимость производства MP5 выше,
           чем пистолета-пулемёта со свободным затвором.</li>
@@ -635,7 +653,7 @@
             onmousedown="change_txt19()">эти патроны</i>,
           использование патронов с легкой пулей
           массой в 115 гран (7,45 грамма) приводит к сильному падению кучности огня даже на небольшом-свыше 25
-          метров-расстоянии. Патрон с более тяжелой-более 9 граммов, пулей, или патрон +Р или +Р+ создаёт очень сильную
+          метров-расстоянии. Патрон с более тяжелой-более 9 граммов, пулей, или патрон или zсоздаёт очень сильную
           отдачу из-за особенностей затвора и возвратно-боевой пружины, которую в этом случае надо менять на более
           жесткую,
           что ещё сильнее ухудшает точность и кучность стрельбы.</li>
@@ -648,6 +666,10 @@
           оружию на базе винтовки G3.</li>
       </ol>
     </div>
+    <div class="col-sm-12 col-md-12">
+      <p class="zagol" id="bal" title="Прикол"><b>Нож - Бабочка(Балисонг)</b></p>
+      <img src="" onclick="change10()" alt="">
+    </div>
   </main>
   <footer>
     <br>
@@ -655,15 +677,32 @@
     <br>
     <br>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9">function to() {
-      Swal.fire({
-        icon: 'info',
-        title: 'прикол',
-        text: 'А почему?',
-        footer: 'gfhпар'
-      })
-    }</script>
+  <script src="anime.js"></script>
   <script>
+    function anima1() {
+      transformX = 250,
+        duration = 10000
+    }
+  </script>
+  <script>
+    function span1() {
+      location.href = "#Ak-47";
+    }
+    function span2() {
+      location.href = "#M4A4";
+    }
+    function span3() {
+      location.href = "#Karambit";
+    }
+    function span4() {
+      location.href = "#D-eagle";
+    }
+    function span5() {
+      location.href = "#Bayonet";
+    }
+    function span6() {
+      location.href = "#MP5-SD";
+    }
     if (podrobnee_button.style.width == '700px') {
       podrobnee_button.style.width = '250px';
     }
@@ -839,34 +878,40 @@
       about_txt.textContent = '';
     }
     function change() {
-      location.href = "";
+      location.href = 'https://ru.wikipedia.org/wiki/%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82_%D0%9A%D0%B0%D0%BB%D0%B0%D1%88%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0';
     }
     function change1() {
-      location.href = "";
+      location.href = 'https://pubg.gamepedia.com/AKM';
     }
     function change2() {
-      location.href = "";
+      location.href = 'Wrong_Link.html';
     }
     function change3() {
-      location.href = "";
+      location.href = 'https://ru.wikipedia.org/wiki/M4_(%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82)';
     }
     function change4() {
-      location.href = "";
+      location.href = 'https://www.youtube.com/watch?v=HyutvD6zCQ8';
     }
     function change5() {
-      location.href = "";
+      location.href = 'https://en.wikipedia.org/wiki/M9_bayonet';
     }
     function change6() {
-      location.href = "";
+      location.href = 'https://ru.wikipedia.org/wiki/Desert_Eagle';
     }
     function change7() {
-      location.href = "";
+      location.href = 'https://cs-love.net/articles/28-vse-ob-oruzhii-m4a1-v-counter-strike.html';
     }
     function change8() {
-      location.href = "";
+      location.href = 'https://ru.wikipedia.org/wiki/HK_MP5';
     }
     function change9() {
-      location.href = "";
+      location.href = 'https://counterstrike.fandom.com/ru/wiki/MP5-SD';
+    }
+    function change10() {
+      location.href = '';
+    }
+    function change11() {
+      location.href = 'https://www.youtube.com/watch?v=HyutvD6zCQ8&t=204s';
     }
     function change_txt() {
       karam1.textContent = 'Керамбит(как пишется в Филиппинах и в большинстве западных стран), kerambit(используются в обоих индонезийском и малайском), kurambik, Карамболь или karambiak(оба от языка Минангкабау)';
