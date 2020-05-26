@@ -1,26 +1,138 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
 
-html, body{
+html, body {
+    transition: 5s;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 16px;
+    background-image: url('https://root-nation.com/wp-content/uploads/2019/10/counter-strike-global-offensive-02.jpg');
+    background-blend-mode: multiply;
+    background-size: cover;
+    color: rgba(44, 236, 243, 0.863);
+    background-color: rgba(0, 0, 255, 0.671);
 }
 
-header{
+.st1_info, .glav, .kont, .about {
+    background-image: url('https://i.ytimg.com/vi/-FgFavUIecU/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgb(65, 226, 204);
+}
+
+nav {
+    transition: 2s;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    height: 4em;
+    width: 94%;
+    margin-left: 2.5%;
+    border-radius: 6px;
+}
+
+img:hover, #st2:hover, #karam3 {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#st3 {
+    font-size: 29px;
+    background-image: url('');
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, rgb(161, 161, 161), rgb(255, 255, 255));
+    color: black;
+}
+
+#orush {
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+b, i {
+    cursor: pointer;
+}
+
+#sklad {
+    margin-left: 2%;
+    height: 4.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#st2 {
+    background-image: url('https://b7.pngbarn.com/png/847/1019/desktop-display-resolution-desktop-environment-space-png-clip-art-thumbnail.png');
+    height: 2.5em;
+    display: flex;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 0%;
+}
+
+.stroke {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-footer{
-    width: 100%;
+button {
+    background: linear-gradient(to bottom, #9cd4e6, #ffffff);
+    border-radius: 16px;
+    width: 7em;
+    height: 2.5em;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background: linear-gradient(to bottom, rgb(161, 161, 161),rgb(255,255,255));
+}
+
+#b4 {
+    width: 11em;
+}
+
+.grey {
+    background: linear-gradient(45deg, #bababa, #ffffff);
+}
+
+.poyasnenia, .podrobnee {
+    transition: 3s;
+    font-size: 24px;
+    color: black;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTkwS0Jjylizw3AtVZMZNMh0cOIuHrVHdpkoSSc0be76ivgdkk1&usqp=CAU');
+    background-blend-mode: multiply;
+}
+
+#podrobnee_button, #poyasnenia_button {
+    transition: 3s;
+    font-size: 36px;
+    color: black;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTkwS0Jjylizw3AtVZMZNMh0cOIuHrVHdpkoSSc0be76ivgdkk1&usqp=CAU');
+    background-blend-mode: multiply;
 }
