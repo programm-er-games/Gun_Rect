@@ -239,10 +239,12 @@
     }
 
     a {
+      background-color: rgb(13, 137, 205);
       color: rgb(160, 189, 132);
     }
 
     a:hover {
+      background-color: rgb(13, 137, 205);
       color: rgb(192, 241, 143);
     }
   </style>
@@ -252,20 +254,20 @@
   <header>
     <div class="stroke" id="st1">
       <div class="st1_info col-sm-12 col-md-6">
-        <b id="orush_sklad" onmousedown="change_logo()">Оружейный Склад</b>
-        <img id="orush" src="images/оружейный1.цтп.png" style="width: 19em; display: none;" alt="">
-        <img id="sklad" src="images/склад.цтп.png" style="width: 10em; display: none;" alt="">
+        <b style="display: none;" id="orush_sklad" onmousedown="change_logo()">Оружейный Склад</b>
+        <img id="orush_sklad" src="/images/Оружейный Склад.цтп(ура!2).png" style="width: 19em; display: block;" alt="">
       </div>
       <div class="st2_info col-sm-3 col-md-3">
         <div class="glav" onclick="change_glav()"><a class="div2_1" href="Glavnaya.html"><img
-              src="images/Главная.цтп.png" style="width: 20em; display: none;" id="glav_img" alt=""></a><b id="glav_txt"
-            style="display: block;">Главная</b></div>
+              src="images/Главная1.цтп.png" style="width: 20em; display: block;" id="glav_img" alt=""></a><b
+            id="glav_txt" style="display: none;">Главная</b></div>
         <div class="kont" onclick="change_kont()"><a class="div2_1" href="Kontakti.html"><img
-              src="images/Контакты.цтп.png" style="width: 20em; display: none;" id="kont_img" alt=""></a><b
-            id="kont_txt" style="display: block;">Контакты</b></div>
+              src="images/Контакты2.цтп.png" style="width: 20em; display: block;" id="kont_img" alt=""></a><b
+            id="kont_txt" style="display: none;">Контакты</b></div>
         <div class="about" onclick="change_about()"><a class="div2_1" href="About.html"><img
-              src="images/Обо мне.цтп.png" style="width: 20em; display: none;" id="about_img" alt=""></a><b
-            id="about_txt" style="display: block;">Обо мне</b></div>
+              src="images/Обо мне2.цтп.png" style="width: 20em; display: block;" id="about_img" alt=""></a><b
+            id="about_txt" style="display: none;">Обо
+            мне</b></div>
       </div>
     </div>
 
@@ -283,7 +285,9 @@
       </div>
       <div class="div5" id="butt2">
         <button id="b2" title="Применено!" onmouseover="change_txt3_2()" onmouseout="change_txt4_2()">
-          Шрифт: 36px
+
+          <body>
+            Шрифт: 36px
         </button>
       </div>
       <div class="div6" id="butt3">
@@ -306,7 +310,7 @@
           <b>
             <p class="podrobnee">В картинках есть ссылки на определённые источники.</p>
             <p class="podrobnee">Т. е., если вам что-то стало непонятно по поводу того или иного оружия,</p>
-            <p class="podrobnee">то Вы <br>можете нажать на картинку <br>и вас перекинет на источник,</p>
+            <p class="podrobnee">то Вы можете нажать на картинку и вас перекинет на источник,</p>
             <p class="podrobnee">с которого я брал или вдохновлялся информацией.</p>
             <p class="podrobnee">Есть и картинки, в которых ничего нет,
               <br> т.е. имеют либо <i id="sum1" onmousedown="change_txt10()">что-то</i>, либо ничего.</p>
@@ -317,7 +321,7 @@
         </details>
       </summary>
     </div>
-
+    <br>
     <nav>
       <span onclick="span1()" id="ak-47">AK-47</span>
       <span onclick="span2()" id="m4a4">M4A4</span>
@@ -325,6 +329,7 @@
       <span onclick="span4()" id="deagle">Desert Eagle</span>
       <span onclick="span5()" id="bay">M9 Bayonet</span>
       <span onclick="span6()" id="mp5-sd">MP5 - SD</span>
+      <span onclick="span7()" id="balis">Нож - Бабочка</span>
     </nav>
 
     <br>
@@ -334,15 +339,14 @@
     <div class="main" id="main1">
       Здраствуйте, дорогие митингующие против школ!
       Сегодня Вы увидите несколько видов оружий и их необычную историю,
-      а также, как они изображены в таких играх, как: Battlefield, PUBG, CS:GO и легендарной Cs 1.6(но это не точно).
+      а также, как они изображены в Cs 1.6.
       Давайте начнём!
     </div>
     <div class="main" id="main2">
       <div class="col-sm-12 col-md-12">
         <p class="zagol" title="Прикол."><b id="Ak-47">AK-47</b></p>
         <p onmousedown="anima1()" id="ak1">Давайте начнём с легенды легенд - автомата Калашникова!</p>
-        <img src="images/AK-47_assault_rifle.jpg" class="col-sm-12 col-md-5" id="AK47" onmousedown="change()">
-        <br>
+        <img src="images/AK-47_assault_rifle.jpg" class="img responsive" id="i1" id="AK47" onmousedown="change()">
         <p> Данный автомат был создан Михаилом Тимофеевичем
           Калашниковым в 1947 году, но был принят на вооружение только в 1949.
           Есть боевое и гражданское семейство автомата Калашникова. Некоторые из них: AKM и AK-74 с их модификациями,
@@ -366,15 +370,14 @@
           он имел калибр 7,62×41 мм, но впоследствии был переработан, т.е. калибр был изменён на 7,62×39 мм.</p>
         <p>В Battlefield и CS:GO AK-47 ничем не отличается от оригинала, но в PUBG-е AK-47 заменён на АКМ (Avtomat
           Kalashnikova Modernizirovanny, т.е. модернизированный автомат Калашникова) и вот как он выглядит:</p>
-        <img src="images/AKM.png" onmousedown="change1()">
+        <img src="images/AKM.png" class="img responsive" id="i2" onmousedown="change1()">
         <p>А в Cs 1.6 AK-47 называется CV-47. Также AK... ой извиняюсь CV-47 был изменён в целях не допустить бана
           на Cs 1.6 из-за авторского права, т.к. компания "Valve" ещё не была такой богатой, чтобы справиться с этим.
         </p>
         <p>В чём заключаются изменения?? А в том, что передёргивалка под названием затвор находится слева, а не
           справа, как
           показано в <a href="#AK47">оригинале</a>.</p>
-        <br>
-        <div class="col-sm-12 col-md-12 1"></div><img src="images/34762185.png">
+        <img src="images/34762185.png" class="img responsive" id="i3">
         <p>Для справки: оригинальная версия AK-47 показана справа. Там чётко и ясно видно, что затвор находится
           справа, раз
           оригинал был показан справа.</p>
@@ -384,13 +387,10 @@
         <img src="images/m4a4-csgo-3d-model-obj-mtl-c4d (1).jpg" class="img responsive col-md-5 col-sm-12"
           style="display: block;" id="m1" onmousedown="change_img4()" title="Нажми на меня!" alt="">
         <img src="images/m4a4-csgo-3d-model-obj-mtl-c4d.jpg" style="display: none;" id="m2" onclick="change3()" alt="">
-        <b><i id="m5"
-            title="В фотке не хватило места для двух ссылок. Правда. Можешь нажать, если хочешь перейти на ссылку."
-            onclick="change2()">Кликни
+        <b><i id="m5" title="Не кликай сюда. Не надо." onclick="change2()">Кликни
             сюда</i></b>
         <p>M4 — автоматический карабин, созданный в США на основе
-          винтовки М16А2</p>
-        <p>и изначально предназначенный для вооружения экипажей боевых машин
+          винтовки М16А2 и изначально предназначенный для вооружения экипажей боевых машин
           и расчётов вооружения и военной техники.
           Несмотря на это, Командование специальных операций США приняло этот карабин
           в качестве единого для всех американских сил специальных операций. В настоящее
@@ -401,10 +401,12 @@
           в сравнении с винтовкой.</p>
         <p>В каждом магазине данной винтовки находятся 30 патронов
           калибра 5.56 и 90 патронов в запасе.</p>
+        <p>
         <ol>Эффективная дальность стрельбы составляет:
           <li>по одиночным целям — 500 м;</li>
           <li>по групповым целям — 600 м;</li>
         </ol>
+        </p>
         <p>К сожалению в Кс 1.6 нету M4A4, поэтому ловите M4A1-S в Кс 1.6:</p>
         <img src="images/img-2020-04-05-15-21-09.png" class="img responsive col-md-5 col-sm-12" style="display: block;"
           id="m3" alt="" onclick="change7()">
@@ -430,12 +432,13 @@
         чтобы собирать корни, собирать молотилку и сажать рис в большей части островной Юго-Восточной Азии. Это меньший
         вариант серпов Юго-Восточной Азии<b id="karam3" title="Опа! Ты что-то нашёл. Нажми сюда!"
           onmousedown="change_txt13()" onmousewheel="change_txt1" style="cursor: pointer;">.</b></p>
-      <img src="images/опа.png" onmousedown="change2()" alt="">
+      <img src="images/опа.png" id="i4" onmousedown="change2()" alt="">
       <audio src="music/Dead Or Alive - You Spin Me Round Like a Record.mp3"></audio>
     </div>
     <div class="col-sm-12 col-md-12">
       <p class="zagol" title="Прикол." id="D-eagle"><b>Desert Eagle</b></p>
-      <img src="images/540px-TM_Desert_Eagle_CHROME_STAINLESS_GBB.jpg" onmousedown="change6()" alt="">
+      <img src="images/540px-TM_Desert_Eagle_CHROME_STAINLESS_GBB.jpg" onmousedown="change6()" class="img responsive"
+        id="i5" alt="">
       <p>Хочу начать список пистолетов с довольно известного Desert Eagle.</p>
       <p>Desert Eagle (с англ. — «Пустынный орёл»)
         — самозарядный пистолет крупного калибра (до 12,7 мм).
@@ -504,7 +507,8 @@
         и может быть выполнено в полевых условиях.</p>
       <i id="kalibr2" title="Нажми на меня!" onmousedown="change_txt9()">Выпуск и продажа аксессуаров для боеприпасов
         калибра .440 Cor-bon и .41 Magnum прекращён.</i>
-      <img class="col-sm-12 col-md-12" id="img_de" style="display: none" src="images/патроны.png">
+      <img class="col-sm-12 col-md-12" id="img_de" style="width: 30em;" onclick="change_img6()" style="display: none"
+        src="images/патроны.png">
       <p>Фирма Magnum Research
         —
         разработчик пистолетов Desert Eagle
@@ -550,7 +554,7 @@
         ножа официально принят США в 1986 году. Данный нож имеет 7-ми дюймовое
         лезвие и оснащён
         оболочкой, выполняющую роль кусачек(фотография).</p>
-      <img id="bay4" src="images/нож.png" style="display: none;" class="img responsive" alt="">
+      <img id="bay4" src="images/нож.png" style="display: block;" class="img responsive" alt="">
       <p>Штык M9 был спроектирован и разработан Чарльзом А. "Микки" Финном
         в его исследовательской компании Qual-A-Tec.
         Это была усовершенствованная копия российского штыка АКМ I типа.
@@ -563,8 +567,8 @@
         и были широко подделаны и незаконно проданы другими производителями.</p>
       <p>В 1986-ом,<i id="bay4" onmousedown="change_txt14()" ondblclick="change_txt15()">Финн получил Патент Соединённых
           Штатов</i>.</p>
-      <p>днако они продолжали беспрепятственно поступать
-        в Соединенные Штаты из Азии и Мексики, сокращаясь до законных продаж.</p>О
+      <p>Однако они продолжали беспрепятственно поступать
+        в Соединенные Штаты из Азии и Мексики, сокращаясь до законных продаж.</p>
       <p>Некоторые производственные циклы M9 имеют дол(?),
         а некоторые - нет, в зависимости от того,
         какой подрядчик изготовил эту партию,
@@ -580,7 +584,8 @@
     </div>
     <div class="col-sm-12 col-md-12">
       <p class="zagol" title="Прикол." id="MP5-SD"><b>MP5 - SD</b></p>
-      <img src="images/Heckler_&_Koch_MP5.jpg" onclick="change8()" class="img responsive" alt="">
+      <img src="images/Heckler_&_Koch_MP5.jpg" onclick="change8()" style="width: 20em;" class="img responsive" id="i6"
+        alt="">
       <p>Heckler & Koch MP5 (Maschinenpistole 5 — пистолет-пулемёт, модель № 5)
         — семейство пистолетов-пулемётов,
         разработанных немецким производителем стрелкового оружия,
@@ -619,7 +624,7 @@
         одновременно играющими роль ускорителя затвора.
         Такая конструкция позволила снизить отдачу и повысить кучность стрельбы.
         Прицел барабанного типа, диоптрический или открытый.</p>
-        <img src="images/ghbrjk.png" class="img responsive" onclick="change9()" alt="">
+      <img src="images/ghbrjk.png" style="width: 21em;" class="img responsive" onclick="change9()" id="i7" alt="">
       <p><b><i id="mp5###" style="display: block;" onmousedown="change_txt18()">Достоинства и недостатки</i></b></p>
       <p><b><i id="mp5###1" style="display: block;">Достоинства</i></b></p>
       <ol>
@@ -668,7 +673,7 @@
     </div>
     <div class="col-sm-12 col-md-12">
       <p class="zagol" id="bal" title="Прикол"><b>Нож - Бабочка(Балисонг)</b></p>
-      <img src="" onclick="change10()" alt="">
+      <img src="" onclick="change10()" id="i8" alt="">
     </div>
   </main>
   <footer>
@@ -685,6 +690,36 @@
     }
   </script>
   <script>
+    img = document.querySelector('.img');
+    img.setAttribute("align", "left");
+
+    img1 = document.querySelector('#i1');
+    img1.setAttribute("align", "left");
+
+    img2 = document.querySelector('#m1');
+    img2.setAttribute("align", "left");
+
+    img3 = document.querySelector('#i5');
+    img3.setAttribute("align", "left");
+
+    img4 = document.querySelector('#img_de');
+    img4.setAttribute("align", "left");
+
+    img5 = document.querySelector('#m2')
+    img5.setAttribute("align", "left")
+
+    img6 = document.querySelector('#bay4');
+    img6.setAttribute("align", "left");
+
+    img7 = document.querySelector('#i6');
+    img7.setAttribute("align", "left");
+
+    img8 = document.querySelector('#i7');
+    img8.setAttribute("align", "left");
+
+    img9 = document.querySelector('#i8');
+    img9.setAttribute("align", "left");
+
     function span1() {
       location.href = "#Ak-47";
     }
@@ -702,6 +737,9 @@
     }
     function span6() {
       location.href = "#MP5-SD";
+    }
+    function span7() {
+      location.href = "#balisong"
     }
     if (podrobnee_button.style.width == '700px') {
       podrobnee_button.style.width = '250px';
@@ -793,7 +831,7 @@
       }, 100);
     }
     function change_img6() {
-
+      img_de.style.width = '90em';
     }
     function change_img7() {
       m1.style.display = 'block';

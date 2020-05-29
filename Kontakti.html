@@ -1,20 +1,97 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+<head>
+  <title>Оружейный Склад: Контакты</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.kontakti.css">
+  <link rel="shortcut icon" href="images/интернет-иконка(телефон4).png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="stroke" id="st1">
+      <div class="st1_info col-sm-12 col-md-6">
+        <b style="display: none;" id="orush_sklad" onmousedown="change_logo()">Оружейный Склад</b>
+        <a href="index.html"><img id="orush_sklad" src="/images/Оружейный Склад.цтп(ура!2).png" style="width: 19em; display: block;"
+            alt="">
+      </div></a>
+      <div class="st2_info col-sm-3 col-md-3">
+        <div class="glav" onclick="change_glav()"><a class="div2_1" href="Glavnaya.html"><img
+              src="images/Главная1.цтп.png" style="width: 20em; display: block;" id="glav_img" alt=""></a><b
+            id="glav_txt" style="display: none;">Главная</b></div>
+        <div class="kont" onclick="change_kont()"><a class="div2_1" href="Kontakti.html"><img
+              src="images/Контакты2.цтп.png" style="width: 20em; display: block;" id="kont_img" alt=""></a><b
+            id="kont_txt" style="display: none;">Контакты</b></div>
+        <div class="about" onclick="change_about()"><a class="div2_1" href="About.html"><img
+              src="images/Обо мне2.цтп.png" style="width: 20em; display: block;" id="about_img" alt=""></a><b
+            id="about_txt" style="display: none;">Обо мне</b></div>
+      </div>
+    </div>
+
+    <br>
+    <div class="stroke" id="st2" style="display: none;">
+      <div class="div7" id="butt4">
+        <button id="b4" title="Применено!" onmouseover="change_txt3_4()" onmouseout="change_txt4_4()">
+          Шрифт: 16px(обычный)
+        </button>
+      </div>
+      <div class="div4" id="butt1">
+        <button id="b1" title="Применено!" onmouseover="change_txt3_1()" onmouseout="change_txt4_1()">
+          Шрифт: 20px
+        </button>
+      </div>
+      <div class="div5" id="butt2">
+        <button id="b2" title="Применено!" onmouseover="change_txt3_2()" onmouseout="change_txt4_2()">
+          Шрифт: 36px
+        </button>
+      </div>
+      <div class="div6" id="butt3">
+        <button id="b3" title="Применено!" onmouseover="change_txt3_3()" onmouseout="change_txt4_3()">
+          Шрифт: 54px
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1>
+      <p>Добро пожаловать во вкладку Контакты!</p>
+    </h1>
+    <h3>
+      <p>Здесь расположены все мои доступные связи, по крайней мере основные.</p>
+    </h3>
+    <h4>
+      <ol>
+        <li>Мой вк: <a href="https://vk.com/olexij2005">vk.com</a></li>
+        <li>Мой What's up: <a href="https://wa.me/79034744752">Whatsapp: +79034744752</i></a></li>
+        <li>Мой номер телефона: <a href="tel:+79034744752">+79034744752</a></li>
+      </ol>
+    </h4>
+  </main>
+  <footer>
+    <br>
+    Всё законно. Perfexturiumm, 2020. Все права мои и они защищены.
+    <br>
+    <br>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -1,0 +1,56 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html, body {
+    transition: 5s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+    background-image: url('https://images5.alphacoders.com/712/712400.png');
+    background-blend-mode: multiply;
+    background-size: cover;
+    color: rgb(194, 177, 235);
+    background-color: rgba(0, 0, 255, 0.671);
+    text-align: center;
+}
+
+.st1_info, .glav, .kont, .about {
+    background-image: url('https://i.ytimg.com/vi/-FgFavUIecU/maxresdefault.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgb(65, 226, 204);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#orush_sklad {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.stroke {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, rgb(161, 161, 161), rgb(255, 255, 255));
+    color: black;
+}
